@@ -35,11 +35,11 @@ public class WorkerController {
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
 
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            System.out.println("ERROR!");
-//        }
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            System.out.println("ERROR!");
+        }
 
         logger.info("PORT = " + env.getProperty("local.server.port"));
 
